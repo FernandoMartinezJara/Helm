@@ -1,0 +1,15 @@
+# Default values for Bucles.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+departamentos:
+  - rrhh
+  - sales
+  - TI
+  - Marketing
+  
+encargados:
+  rrhh: John Skyes
+  sales: Frank Marino
+  TI: John Norum
+  Marketing: Vinnie Vincent
