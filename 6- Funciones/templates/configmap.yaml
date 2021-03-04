@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name}}-config-functions
+  namespace: default
+data:
+  quote: {{ quote .Values.city }}
+  upper: {{ upper .Values.city }}
+  pipe: {{ quote .Values.city | upper}}
+  pipe2: {{ upper .Values.city | repeat 3 }}
+  now: {{ now }}
+  substr: {{ substr 0 3 .Values.city}}
+  network: {{ getHostByName "www.google.com"}}
